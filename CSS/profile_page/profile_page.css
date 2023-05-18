@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+}
+
+.nav {
+    color: antiquewhite;
+    background-color: black;
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#profile {
+    height: auto;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mid-nav {
+    height: auto;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#mid-nav a {
+    color: rgba(255, 255, 255, .8);
+}
+
+
+.btn {
+    color: blueviolet;
+    background-color: aquamarine;
+    height: auto;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 3px purple;
+}
+.header-wrapper {
+    height: 160px;
+    /* background: red; */
+}
+.blue-header {
+    background-color: aquamarine;
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.profile-pic {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 75px;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+.black-header {
+    color: white;
+    background-color: black;
+    width: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+#contacts {
+    width: auto;
+}
+
+#body {
+    display: flex;
+    width: 100%;
+}
+
+#right-column {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.inner-text {
+    padding: 1rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#date {
+    color: gray;
+}
+
+.row {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic {
+    height: 80px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#gear {
+    height: 15px;
+    margin-right: 1rem;
+}
+
+#left-column {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#highlighted {
+    color: white!important;
+    font-weight: 600;
+}
+
+#drop {
+    height: 15px;
+}
+
+#right-box2 {
+    border: 2px solid orange;
+}
+
+.cr {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.box {
+    /* padding: 1rem; */
+    margin-top: 2rem;
+    border: 2px solid black;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-card:last-of-type {
+    margin-bottom: 0;
+}
+
+.num-circle {
+    border-radius: 25px;
+    background-color: gray;
+    padding: .5rem;
+    margin-right: 10px;
+}
+
+.card-button {
+    height: auto;
+    width: 20px;
+}
+
+.footer {
+    padding: 1rem;
+    border-top: 2px solid black;
+}
+
+.blue-button {
+    color: blue;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}

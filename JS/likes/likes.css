@@ -1,0 +1,64 @@
+* {
+    margin: unset;
+    padding: unset;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box    {
+    padding: 1rem;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.top-row > div {
+    display: flex;
+    align-items: center;
+}
+
+.top-row > div p{
+    margin-right: 3rem;
+}
+.btn {
+    background-color: yellow;
+    box-shadow: 3px 3px;
+    padding: .25rem .5rem;
+}
+
+#container {
+    padding: 0 2rem;
+    margin: 0 2rem;
+}
+
+.nav {
+    color: white;
+    background-color: black;
+}
+.row {
+    display: flex;
+    width: 100%;
+}
+.col-2 {
+    width: 70%;
+}
+.col-1 {
+    width: 30%;
+}
+.pp {
+    width: 50px
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.card * {
+    margin-bottom: 2rem;
+}
