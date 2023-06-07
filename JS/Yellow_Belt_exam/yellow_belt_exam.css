@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon {
+    height: 35px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#cartIcon {
+    height: 35px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.purple {
+    color: rebeccapurple;
+}
+
+#profile {
+    display: flex;
+}
+
+#web-body {
+    background-color: lightgrey;
+    padding-left: 6rem;
+    width: auto;
+    display: flex;
+    padding-right: 6rem;
+    flex-direction: column;
+}
+
+#top-sliver {
+    background-color: rebeccapurple;
+    padding: 5px;
+}
+
+#right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.cart-num {
+    font-size: larger;
+}
+
+#euro-box {
+    background-color: white;
+    color: black;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+#money {
+    display: flex;
+    align-items: center;
+    height: 38px;
+    margin: 3px;
+}
+
+#bannerImg {
+    margin-top: 30px;
+    display: flex;
+    width: 70%;
+    padding: 20px;
+}
+
+#highlights {
+    padding-top: 10px;
+}
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#leftArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#rightArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    scale: -1;
+}
+
+#img-select {
+    display: flex;
+    justify-content: center;
+}
+
+.grey-bar {
+    width: 40px;
+    height: 10px;
+    background-color: grey;
+    margin: 20px;
+}
+
+.purple-bar {
+    width: 40px;
+    height: 10px;
+    background-color: rebeccapurple;
+    margin: 20px;
+}
+
+.game-pic {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.game {
+    padding-bottom: 10px;
+    background-color: white;
+    width: 30%;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-row {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.grey-price {
+    color: gray;
+}
+
+.buyBtn {
+    padding: 10px;
+    color: white;
+    background-color: green;
+    box-shadow: 2px 2px black;
+}
+
+.purple-btn {
+    padding: 10px;
+    color: white;
+    background-color: rebeccapurple;
+}
+
+#store {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.apple-windows {
+    height: 30px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.title {
+    padding-left: 15px;
+}
+
+#shoppingCart {
+    display: flex;
+    align-items: center;
+}
