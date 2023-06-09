@@ -109,14 +109,14 @@
 # print(b)
 
 
-#14
-def foo():
-    print(1)
-    bar()
-    print(2)
-def bar():
-    print(3)
-foo()
+# #14
+# def foo():
+#     print(1)
+#     bar()
+#     print(2)
+# def bar():
+#     print(3)
+# foo()
 
 
 # #15
