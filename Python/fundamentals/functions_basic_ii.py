@@ -34,8 +34,8 @@ print(first_plus_length([1,2,3,4,5]))
 # If the list has less than 2 elements, have the function return False
 
 def values_greater_than_second(forthList):
-        forthList = []
-        if len(forthList) == len(forthList[2]):
+        
+        if forthList
             print("false")
 values_greater_than_second([5,2,3,2,1,4])
 
