@@ -34,10 +34,16 @@ print(first_plus_length([1,2,3,4,5]))
 # If the list has less than 2 elements, have the function return False
 
 def values_greater_than_second(forthList):
-        
-        if forthList
-            print("false")
-values_greater_than_second([5,2,3,2,1,4])
+    if len(forthList) < 2:
+        return("false")
+    outcome = []
+    for i in range(0,len(forthList)):
+        if forthList[i] > forthList[1]:
+            outcome.append(forthList[i])
+    print(len(outcome))
+
+print(values_greater_than_second([5,2,3,2,1,4]))
+print(values_greater_than_second([3])) # works with the first part of the script
 
 
 # #5
@@ -45,3 +51,12 @@ values_greater_than_second([5,2,3,2,1,4])
 # size and value. The function should create and return a list
 # whose length is equal to the given size, 
 # and whose values are all the given value.
+
+def length_and_value(size,value):
+    output = []
+    for i in range(0,size):
+        output.append(value)
+    return output
+
+print(length_and_value(4,7))
+print(length_and_value(6,2))
