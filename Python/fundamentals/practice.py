@@ -33,7 +33,7 @@ class Vehicle:
         self.model = model
         self.color = color
         self.year = year
-        self.is_manuel = False
+        self.is_manuel = is_manuel
         self.mileage = mileage
         # print(self.model)
 
@@ -118,4 +118,15 @@ kevin = {"name": "Kevin Durant", "age":34, "position": "small forward", "team": 
 # Pass in all the values from the dictionary by their keys
 player_kevin = Player(kevin["name"], kevin["age"], kevin["position"], kevin["team"])
 print(player_kevin.position) # prints small forward
+
+
+#Class wednesday
+
+class Pet:
+    def __init__(self):
+        pass
+
+    @classmethod
+    def get_pet_by_name(cls, name):
+        
 
