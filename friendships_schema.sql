@@ -1,0 +1,1 @@
+use friendships_schema

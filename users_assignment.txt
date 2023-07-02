@@ -1,0 +1,24 @@
+-- SELECT * FROM users
+
+-- INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+-- VALUES('Josh', 'Pagel','jpagel@gmail.com', NOW(), NOW());
+
+-- INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+-- VALUES('Gracie', 'Myers','gm@gmail.com', NOW(), NOW());
+
+-- INSERT INTO users (first_name, last_name, email, created_at, updated_at)
+-- VALUES('Himothy', 'Hammerton','jpagel@gmail.com', NOW(), NOW());
+
+-- SELECT email FROM users
+-- SELECT id=3 FROM users
+
+-- UPDATE users
+-- SET last_name = 'Pancakes'
+-- WHERE id = 3
+
+-- DELETE FROM users WHERE id = 2
+
+-- SELECT first_name FROM users
+
+-- SELECT id, first_name, last_name, email, updated_at, created_at FROM users
+-- INTO OUTFILE 'myoutput.txt';
