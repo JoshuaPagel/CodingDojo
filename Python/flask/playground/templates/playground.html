@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .wrapper{
+        .header{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-around;
             flex-wrap: wrap;
-            gap: 15px;
         }
         .box{
             width: 250px;
             height: 250px;
             border: 2px solid black;
-            border-radius: 10px;
         }
     </style>
     <title>Playground</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="header">
         {% for i in range(0,num) %}
         <div class="box" style="background-color: {{color}};"></div>
         {% endfor %}
