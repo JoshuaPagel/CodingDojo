@@ -4,8 +4,6 @@ app.secret_key = "spaghetti"
 
 @app.route('/')
 def index():
-    import random
-    random.randint(1,100)
     return render_template("index.html")
 
 
