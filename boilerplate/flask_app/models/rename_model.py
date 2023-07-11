@@ -3,9 +3,13 @@ from flask_app.config.mysqlconnection import connectToMySQL
 
 db = 'Your database name'
 
-class Rename:
+class Rename(ie user):
     def __init__(self, data):
         #follow database table fields plus any other attribute you want to create
+        # EXAMPLE: self.id = data['id']
+        # self.first_name = data['first_name']
+        # ETC
+        #self.TABLE(ie user) = []
         pass
 
 
@@ -13,7 +17,12 @@ class Rename:
     def rename(cls):
         query = "SELECT * FROM users;"
         results = connectToMySQL(db).query_db(query)
+        users = []
+        for user in results:
+            new_user = cls(user)
+            users.append(new_user)
+            return users
         #Nice little head start
         #Rest of code here
-        print(results)
+        print(results[some_number]['some_key'(ie first_name)])
         return "Something here"

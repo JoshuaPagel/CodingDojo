@@ -5,8 +5,9 @@ from flask_app.models.rename_model import Rename #importing the class here
 #You will also need a bycrypt import (we will introduce this week 5)
 
 
-@app.route('/') #Get request for 127.0.0.1:5000
+@app.route('/') #Get request for 127.0.0.1:5001
 def home():
+    Rename.rename()
     return render_template('index.html')
 
 @app.route('/name of path/route goes here!', methods=['POST']) #Post request route
