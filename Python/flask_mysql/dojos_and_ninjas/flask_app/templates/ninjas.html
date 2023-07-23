@@ -10,31 +10,31 @@
 </head>
 
 <body>
-    <form action="">
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Dojo:</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>{{}}</option>
-                <option>{{}}</option>
-                <option>{{}}</option>
-                <option>{{}}</option>
-                <option>{{}}</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label>First Name:</label>
-            <input type="email" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Last Name:</label>
-            <input type="email" class="form-control">
-        </div>
-        <div class="form-group">
-            <label>Age:</label>
-            <input class="form-control">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="container">
+        <h1>{{dojo_info_w_user.name}}</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Created At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for ninja in dojo_info_w_user.ninjas %}
+                    <tr>
+                        <th scope="row">{{ninja.id}}</th>
+                        <td>{{ninja.first_name}}</td>
+                        <td>{{ninja.last_name}}</td>
+                        <td>{{ninja.age}}</td>
+                        <td>{{ninja.created_at}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <a href="/dojos"><u>Home</u></a>
+    </div>
 </body>
 
 </html>

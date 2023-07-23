@@ -30,5 +30,3 @@ class User:
         # print(db_response)
         result = connectToMySQL(db).query_db(query, data)
         return result
-    
-# I'm stumped on connecting the database
