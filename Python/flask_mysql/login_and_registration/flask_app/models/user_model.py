@@ -31,22 +31,31 @@ class User:
         return result
     
     @staticmethod
-    def validate_user(user):
+    def validate_user(user_data):
         is_valid = True
-        if len(user['first_name']) < 2:
+        if len(user_data['first_name']) < 2:
             flash("First name must be at least 2 characters and letters only.")
             is_valid = False
-        if len(user['last_name']) < 2:
+        if len(user_data['last_name']) < 2:
             flash("Last name must be at least 2 characters and letters only.")
             is_valid = False
-        if not EMAIL_REGEX.match(user["email"]): 
+        if not EMAIL_REGEX.match(user_data["email"]): 
             flash("Email format is invalid or already is being used.")
             is_valid = False
-        if len(user["password"]) < 8:
+        if len(user_data["password"]) < 8:
             flash("Password must have more than 8 characters.")
             is_valid = False
-        if len(user["confirm_password"]) < 8:
+        if len(user_data["confirm_password"]) < 8:
             flash("Passwords don't match")
             is_valid = False
         print("$$$$$$$$$$$$$$$$$$$")
         return is_valid
+
+    @staticmethod
+    def find_user(email_dict):
+        query = "SELECT * FROM users WHERE email = %(email)s"
+        results = connectToMySQL(db).query_db(query, email_dict)
+        print(results)
+        if len(results) < 1:
+            return False
+        return results
