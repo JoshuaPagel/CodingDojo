@@ -10,7 +10,7 @@ def home():
 
 @app.route('/register', methods=['POST'])
 def register():
-    if not User.validate_user(request.form):
+    if not User.validate_register(request.form):
         return redirect('/')
     # User.save_user(request.form) Saves it without hashing password
     print(request.form)
@@ -28,12 +28,31 @@ def register():
 
 @app.route('/login_page', methods=['POST'])
 def login_page():
-    data {
-        'email' : request.form['email']
-    }
-    user_in_db = User.find_user()
-    return render_template('dashboard.html')
+    user = User.find_user_by_email(request.form)
+    if not user:
+        flash("Invalid Email")
+        return redirect('/')
+    if not bcrypt.check_password_hash(user.password, request.form['password']):
+        flash("Invalid Password")
+        return redirect('/')
+    session['user_id'] = user.id
+    return redirect('/dashboard')
+    # data ={
+    #     'email' : request.form['email']
+    # }
+    # user_in_db = User.find_user_by_email()
+    # return render_template('dashboard.html')
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template('dashboard.html')
+    if 'user_id' not in session:
+        return redirect('/logout')
+    data ={
+        'id' : session['user_id']
+    }
+    return render_template("dashboard.html", user=User.find_user_by_id(data))
+    
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect('/')
