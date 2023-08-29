@@ -1,6 +1,6 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 
-db = 'assignment_users'
+db = 'users_schema'
 
 class User:
     def __init__(self, data):
@@ -26,7 +26,5 @@ class User:
     @classmethod
     def save_user(cls, data):
         query = "INSERT INTO users (first_name, last_name, email) VALUES (%(first_name)s, %(last_name)s, %(email)s);"
-        # db_response = connectToMySQL('assignment_users').query_db(query, form_data)
-        # print(db_response)
         result = connectToMySQL(db).query_db(query, data)
         return result
