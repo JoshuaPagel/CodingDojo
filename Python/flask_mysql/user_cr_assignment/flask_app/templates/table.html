@@ -17,6 +17,7 @@
                 <th scope="col">Last</th>
                 <th scope="col">Email</th>
                 <th scope="col">Created At</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +28,11 @@
                 <td>{{user.last_name}}</td>
                 <td>{{user.email}}</td>
                 <td>{{user.created_at}}</td>
+                <td>
+                    <a href="/show_user/{{user.id}}">show</a>
+                    <a href="/edit">Edit</a>
+                    <a href="/users/{{user.id}}/delete">Delete</a>
+                </td>
             </tr>
         {% endfor %}
         </tbody>

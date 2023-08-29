@@ -19,3 +19,13 @@ def add():
 def save():
     User.save_user(request.form)
     return redirect('/table')
+
+@app.route('/users/<int:id>/delete')
+def delete(id, user):
+    User.del_user(id, user)
+    return redirect('/', users=User.del_user())
+
+@app.route('/show_user/<int:id>')
+def show_user():
+    User.select_one_users()
+    return render_template('single_user.html')
